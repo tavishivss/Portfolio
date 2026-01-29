@@ -1,4 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .App {
   width: 100%;
-  min-height: 100vh;
+}
+
+/* Each page section snaps to viewport */
+.App > div {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 100%;
 }

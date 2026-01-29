@@ -1,12 +1,15 @@
 import React from 'react';
-import LandingPage from './LandingPage';
+import LandingPage from './LandingPage/LandingPage';
+import ProjectPage from './ProjectPage/ProjectPage';
+import TalkPage from './TalkPage/TalkPage';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <LandingPage />
-      {/* Additional sections will be added below */}
+      <ProjectPage />
+      <TalkPage />
     </div>
   );
 }
